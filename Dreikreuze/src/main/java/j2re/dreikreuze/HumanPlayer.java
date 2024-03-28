@@ -2,15 +2,14 @@ package j2re.dreikreuze;
 
 import java.util.Scanner;
 
-public class HumanPlayer implements Player {
+public class HumanPlayer extends Player {
 
-    Scanner scanner;
-
-    public HumanPlayer(Scanner scanner) {
-        this.scanner = scanner;
+    public HumanPlayer(Scanner scanner, Field field) {
+        super(scanner, field);
     }
 
-    public void makeTurn(Field field) {
+    @Override
+    public void makeTurn() {
         int position;
         System.out.print("Your move: ");
         position = scanner.nextInt();

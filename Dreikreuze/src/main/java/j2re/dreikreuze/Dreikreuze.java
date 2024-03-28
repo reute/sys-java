@@ -17,19 +17,20 @@ public class Dreikreuze {
         scanner = new Scanner(System.in);
         field = new Field(FIELD_SIZE);
         players = new Player[2];
-        players[HUMAN] = new HumanPlayer(scanner);
-        players[COMP] = new ComputerPlayer(scanner);
+        players[HUMAN] = new HumanPlayer(scanner, field);
+        players[COMP] = new ComputerPlayer(scanner, field);
     }
 
     public static void main(String[] args) {
         Dreikreuze game = new Dreikreuze();
         game.intro();
         game.run();
+
     }
 
     void run() {
         while (field.spaceLeft()) {
-            players[playerIndex].makeTurn(field);
+            players[playerIndex].makeTurn();
             field.print();
             if (field.gameover()) {
                 break;

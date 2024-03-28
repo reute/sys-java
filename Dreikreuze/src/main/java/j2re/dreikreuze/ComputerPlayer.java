@@ -3,15 +3,13 @@ package j2re.dreikreuze;
 import java.util.Random;
 import java.util.Scanner;
 
-public class ComputerPlayer implements Player {
+public class ComputerPlayer extends Player {
 
-    Scanner scanner;
-
-    public ComputerPlayer(Scanner scanner) {
-        this.scanner = scanner;
+    public ComputerPlayer(Scanner scanner, Field field) {
+        super(scanner, field);
     }
 
-    public void makeTurn(Field field) {
+    public void makeTurn() {
         int position;
         Random rand = new Random();
         do {
