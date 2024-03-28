@@ -25,7 +25,6 @@ public class Dreikreuze {
         Dreikreuze game = new Dreikreuze();
         game.intro();
         game.run();
-
     }
 
     void run() {

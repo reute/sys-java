@@ -12,7 +12,7 @@ public class ComputerPlayer extends Player {
         int position;
         Random rand = new Random();
         do {
-            position = rand.nextInt((field.size - 1) + 1) + 1;
+            position = rand.nextInt(field.size);
         } while (!field.take(position));
         System.out.println("Computer sets X at position " + position);
     }
