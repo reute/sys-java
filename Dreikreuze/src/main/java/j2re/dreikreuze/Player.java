@@ -4,11 +4,9 @@ import java.util.Scanner;
 
 abstract class Player {
 
-    Scanner scanner;
     Field field;
 
-    public Player(Scanner scanner, Field field) {
-        this.scanner = scanner;
+    public Player(Field field) {    
         this.field = field;
     }
 

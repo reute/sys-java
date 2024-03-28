@@ -1,12 +1,11 @@
 package j2re.dreikreuze;
 
 import java.util.Random;
-import java.util.Scanner;
 
 public class ComputerPlayer extends Player {
 
-    public ComputerPlayer(Scanner scanner, Field field) {
-        super(scanner, field);
+    public ComputerPlayer( Field field) {
+        super(field);
     }
 
     public void makeTurn() {

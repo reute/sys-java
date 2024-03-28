@@ -3,9 +3,12 @@ package j2re.dreikreuze;
 import java.util.Scanner;
 
 public class HumanPlayer extends Player {
+    
+    Scanner scanner;
 
-    public HumanPlayer(Scanner scanner, Field field) {
-        super(scanner, field);
+    public HumanPlayer(Field field, Scanner scanner) {
+        super(field);
+        this.scanner = scanner;
     }
 
     @Override

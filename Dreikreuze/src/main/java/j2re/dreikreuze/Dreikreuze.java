@@ -17,8 +17,8 @@ public class Dreikreuze {
         scanner = new Scanner(System.in);
         field = new Field(FIELD_SIZE);
         players = new Player[2];
-        players[HUMAN] = new HumanPlayer(scanner, field);
-        players[COMP] = new ComputerPlayer(scanner, field);
+        players[HUMAN] = new HumanPlayer(field, scanner);
+        players[COMP] = new ComputerPlayer(field);
     }
 
     public static void main(String[] args) {
