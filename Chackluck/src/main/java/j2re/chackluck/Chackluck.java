@@ -1,4 +1,4 @@
-package j2re.chacklucknb;
+package j2re.chackluck;
 
 import java.util.Random;
 
